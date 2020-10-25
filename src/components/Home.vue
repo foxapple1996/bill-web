@@ -19,13 +19,13 @@
             :collapse-transition="false"
             router
             :default-active="this.activePath">
-            <el-submenu :index="item.id + ''" v-for="item in menuList" :key="item.id">
+            <el-submenu :index="item.mId + ''" v-for="item in menuList" :key="item.mId">
               <template slot="title">
                 <i class="el-icon-location"></i>
                 <span>{{ item.authName }}</span>
               </template>
               <template>
-                <el-menu-item :index="'/' + subItem.path" v-for="subItem in item.children" :key="subItem.id"
+                <el-menu-item :index="'/' + subItem.path" v-for="subItem in item.children" :key="subItem.mId"
                   @click="saveNavActive('/' + subItem.path)">
                   <template slot="title">
                     <i class="el-icon-menu"></i>
