@@ -6,11 +6,13 @@ import 'element-ui/lib/theme-chalk/index.css'
 import './assets/css/global.css'
 import './assets/icon/iconfont.css'
 import axios from 'axios'
+import dayjs from 'dayjs'
 
 Vue.config.productionTip = false
 Vue.use(Element)
 Vue.prototype.$http = axios;
 Vue.prototype.$message = Message
+Vue.prototype.dayjs = dayjs;
 
 
 axios.defaults.baseURL = "http://localhost:8088/api"

@@ -5,6 +5,7 @@ import Home from './components/Home'
 import Welcome from "./components/Welcome";
 import AccountList from "./components/AccountList";
 import MateList from "./components/MateList";
+import Bill from './components/Bill';
 
 Vue.use(Router)
 //重复点击控制台报错设置
@@ -38,6 +39,10 @@ const router = new Router({
         {
           path: '/mateList',
           component: MateList
+        },
+        {
+          path: '/billsys',
+          component: Bill
         }
       ]
     }
